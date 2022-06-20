@@ -12,14 +12,14 @@
 }
 
 
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lato' , sans-serif;
-   
+
 }
+
 #root{
     width: 100vw;
     height: 100vh;
@@ -31,6 +31,7 @@
         ". main ."
         "footer footer footer";
 }
+
 header{
     grid-area: header;
 }
@@ -43,6 +44,8 @@ footer{
     grid-area: footer;
     
 }
+
+/*Home*/
 
 .Main{
     
@@ -63,7 +66,6 @@ footer{
 
 }
 
-
 h1{
     font-family: 'Kulim Park', sans-serif;
     text-align: center;
@@ -83,7 +85,6 @@ h1{
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .News-right{
     width: 40vw;
@@ -202,7 +203,7 @@ h1{
 
 h4{
     margin-top:10px;
-    color: var(--colorBlue);
+    color: var(--colorLightBlue);
     font-size: 24px;
     text-align: center;
     font-family: 'Kulim Park', sans-serif;
@@ -334,12 +335,17 @@ h4{
     color: var(--colorBlue); 
     padding-bottom:10px;
     padding-top: 10px;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .cardBox>p{
     color: var(--colorLightBlue);
     padding-bottom: 10px;
+    padding-left: 10px;
 }
+
+/*Regions*/
 
 .hero{
     height: 40vh;
@@ -386,23 +392,10 @@ h4{
     font-size: 20px;
 }
 
-.region-main>.SaoMiguel>button{
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: var(--colorLightBlue);
-    color: var(--colorLight);
-    border: none;
-    font-size: 22px;
-    align-self: center;
-    margin-top: 10px;
-    cursor: pointer;
-
-}
-
 .SaoMiguel>h4{
     padding-top: 40px;
     font-family: 'Kulim Park', sans-serif;
+    color: var(--colorBlue);
 }
 
 .region-main>.SaoMiguel{
@@ -416,6 +409,8 @@ h4{
     padding-top: 20px;
     font-size: 20px;
 }
+
+/*News*/
 
 .hero-news{
     height: 40vh;
@@ -482,22 +477,26 @@ h4{
 }
 
 .news2-left>h4{
+    padding-left: 10px;
     padding-bottom: 60px;
     font-size: 24px;
     text-align: left;
-    color: var(--colorLightBlue);
+    color: var(--colorBlue);
     font-family: 'Kulim Park', sans-serif;
     
 }
 
 
 .news1-left>h5{
+    padding-left: 10px;
     padding-top: 40px;
     font-size: 22px;
-    color: var(--colorLightBlue);
+    color: var(--colorBlue);
     text-align: left;
     font-family: 'Kulim Park', sans-serif;
 }
+
+
 
 /*Contactos*/
 

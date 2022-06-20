@@ -1,4 +1,3 @@
-import News from './News';
 import * as React from 'react';
 
 function Home(){

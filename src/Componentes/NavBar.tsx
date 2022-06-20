@@ -2,7 +2,8 @@ import React  from 'react';
 import './NavBar.css';
 import Logo from '../images/Logo.png';
 import PT from '../images/flag.png';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 function NavBar () {
    return <>
@@ -12,12 +13,12 @@ function NavBar () {
       </div>
       <div className='nav-btn'> 
          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/About">About</Link></li> 
-            <li><Link to="/Portugal">Portugal</Link></li> 
-            <li><Link to="/Regions">Regions</Link></li> 
-            <li><Link to="/News">News</Link></li> 
-            <li><Link to="/Contacts">Contacts</Link></li> 
+            <li><NavLink to="/" activeStyle={{color: "red",textDecoration:"none"}} >Home</NavLink></li>
+            <li><NavLink to="/About" activeStyle={{color: "red",textDecoration:"none"}} >About</NavLink></li> 
+            <li><NavLink to="/Portugal" activeStyle={{color: "red",textDecoration:"none"}}>Portugal</NavLink></li> 
+            <li><NavLink to="/Regions" activeStyle={{color: "red",textDecoration:"none"}}>Regions</NavLink></li> 
+            <li><NavLink to="/News" activeStyle={{color: "red",textDecoration:"none"}}>News</NavLink></li> 
+            <li><NavLink to="/Contacts" activeStyle={{color: "red",textDecoration:"none"}}>Contacts</NavLink></li> 
          </ul>  
       </div>
       <div className='pt'>
