@@ -56,27 +56,35 @@ footer{
 
 .Home{
     
-    height: 40vh;
+    height: 100vh;
     background-image: url(../src/images/main.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     margin-left: -50px;
     margin-right: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 100px;
 
 }
 
 h1{
     font-family: 'Kulim Park', sans-serif;
-    text-align: center;
-    font-size: 60px;
+    text-align: left;
+    font-size: 100px;
     color: var(--colorBlue);
     padding-top: 20px;
+    font-style: italic;
+    font-weight: 800;
 }
 
-.Main>p{
-    text-align: center;
-    font-size: 24px;
+.Main>.Home>p{
+    text-align: left;
+    font-size: 34px;
+    color: var(--colorBlack);
+    font-weight: bold;
 }
 
 .Main>.News{
@@ -87,8 +95,8 @@ h1{
 }
 
 .News-right{
-    width: 40vw;
-    height: 40vh;
+    width: 50vw;
+    height: 50vh;
     background-image: url('../src/images/news-right.jpeg');
     background-size: cover;
 }
@@ -107,7 +115,6 @@ h1{
     padding-bottom: 20px;
     color: var(--colorBlue);
     font-family: 'Kulim Park', sans-serif;
-    padding-top: 20px;
     padding-left:30px;
     
 }
@@ -209,6 +216,8 @@ h4{
     font-family: 'Kulim Park', sans-serif;
 }
 
+/*About*/
+
 .about-main{
     margin-top: 20px;
     display: flex;
@@ -218,23 +227,26 @@ h4{
 }
 
 .about-main>.about-image{
-    width: 40vw;
+    width: 40%;
     height: 50vh;
     background-image: url(../src/images/tram-about.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .about-main>.about-text{
-    width: 40vw;
-    text-align: center;
+    width: 40%;
+    text-align: left;
     font-size: 20px;
 }
 
 .about-main>.about-text>h3{
+    margin-top: 30px;
     font-size: 30px;
     color: var(--colorBlue);
     margin-bottom: 40px;
+    margin-left: 10px;
     font-family: 'Kulim Park', sans-serif;
 }
 
@@ -274,8 +286,10 @@ h4{
     font-family: 'Kulim Park', sans-serif;
 }
 
+/*Portugal*/
+
 .portugal{
-    height: 40vh;
+    height: 50vh;
     background-image: url(../src/images/portugal-lisboa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,6 +300,7 @@ h4{
 
 .portugal-main{
     margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -325,10 +340,11 @@ h4{
     text-align: center;
 }
 
-.portugal-text>h4{
+.portugal-main>h4{
     padding-top:24px;
     padding-bottom:30px;
     font-family: 'Kulim Park', sans-serif;
+    color: var(--colorBlue);
 }
 
 .cardBox>h3{
@@ -348,7 +364,7 @@ h4{
 /*Regions*/
 
 .hero{
-    height: 40vh;
+    height: 50vh;
     background-image: url(../src/images/loule.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -413,7 +429,7 @@ h4{
 /*News*/
 
 .hero-news{
-    height: 40vh;
+    height: 50vh;
     background-image: url(../src/images/news-hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 

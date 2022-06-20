@@ -9,14 +9,15 @@ function Portugal(){
     <div className="portugal"></div>
     <div className="portugal-text" >
         <div className="portugal-main">
+            <h4>Interesting places in Portugal that you have to visit!
+            </h4>
             <p>Portugal é um país no sul da Europa, localizado na Península Ibérica, que faz fronteira com a Espanha. Sua localização às margens do Oceano 
                 Atlântico influenciou muitos aspectos da cultura do país: o bacalhau salgado e as sardinhas assadas são pratos típicos nacionais, as praias 
                 do Algarve são destinos muito procurados e boa parte da arquitetura do país data dos séculos XVI a XIX, 
                 quando Portugal era um poderoso império marítimo.
             </p>
         </div>
-        <h4>Interesting places in Portugal that you have to visit!
-        </h4> 
+        
         <div className="cards">               
             <div className="cardBox card1">
                 <img src={Acores} alt="Acores" />

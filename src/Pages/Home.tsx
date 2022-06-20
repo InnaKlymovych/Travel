@@ -7,17 +7,17 @@ function Home(){
     
         <div className="Main">
 
-            <div className='Home'></div>
-            <h1>Travel Portugal</h1>
-            <p>A stunning natural beauty that combines with the great climate and friendly people.Portugal has the largest area covered by golf courses in southern Europe, in pleasant and easily accessed locations.
+            <div className='Home'>
+                <h1>Travel Portugal</h1>
+                <p>A stunning natural beauty that combines with the great climate and friendly people. <br /> Portugal has the largest area covered by golf courses in southern Europe, in pleasant and easily accessed locations.
                 Excellent direct flight connections and a very advanced road infrastructure.Near the mountains, or closest to the coast, Portugal offers you the ideal scenario for your second home.
-            </p>
+                </p>
+            </div>
             <div className="News">
                 <div className="News-left" id="news">
                     <h3>Portugal tourism news</h3>
-                    <p>Update of Clean & Safe requirements in accordance with the Directorate-General for Health guidelines.The Portuguese Tourism board has updated the requirements to obtain the pioneering health label for tourism-related companies
+                    <p>Update of Clean & Safe requirements in accordance with the Directorate-General for Health guidelines. The Portuguese Tourism board has updated the requirements to obtain the pioneering health label for tourism-related companies
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero quibusdam nesciunt deleniti blanditiis laborum nulla numquam, eius commodi doloribus reiciendis quas, ducimus facilis officiis velit fuga! Tenetur, nisi doloribus. ...</p>
-                    
                 </div>
                 <div className="News-right">
                 
