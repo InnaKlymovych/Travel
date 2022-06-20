@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Montagu+Slab:opsz,wght@16..144,200&family=Nunito:ital,wght@0,200;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@1,600&family=Lato:ital,wght@1,900&family=Share+Tech+Mono&display=swap');
+:root{
+   --colorMilk:#EFF3C6;
+   --colorBlue:#0E64AF;
+   --colorLightBlue:#0E98A5;
+   --colorGreen:#16AE95;
+   --colorBlack:#1C1919;
+   --colorLight:#E2F0F5;
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato' , sans-serif;
+   
+}
+#root{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:14vh auto 179px;
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: 
+        "header header header"
+        ". main ."
+        "footer footer footer";
+}
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    
+}
+
+.Main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Home{
+    
+    height: 40vh;
+    background-image: url(../src/images/main.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: -50px;
+    margin-right: -50px;
+
+}
+
+
+h1{
+    font-family: 'Kulim Park', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: var(--colorBlue);
+    padding-top: 20px;
+}
+
+.Main>p{
+    text-align: center;
+    font-size: 24px;
+}
+
+.Main>.News{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.News-right{
+    width: 40vw;
+    height: 40vh;
+    background-image: url('../src/images/news-right.jpeg');
+    background-size: cover;
+}
+
+.Main>.News>.News-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.Main>.News>.News-left>h3{
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: var(--colorBlue);
+    font-family: 'Kulim Park', sans-serif;
+    padding-top: 20px;
+    padding-left:30px;
+    
+}
+
+.Main>.News>.News-left>p{
+    text-align: left;
+    font-size:20px ;
+    padding-left:20px;
+}
+
+.Main>.News-foto{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Main>.News-foto>h3{
+    text-align: center;
+    font-size: 30px;
+    color: var(--colorBlue);
+    margin-bottom: 20px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.Main>.News-foto>.News-foto-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 360px;
+    align-items: center;
+}
+
+.Main>.News-foto>.News-foto-container>.card1{
+    width: 340px;
+    height: 320px;
+    justify-content: center;
+    
+}
+
+.Main>.News-foto>.News-foto-container>.card2{
+    width: 340px;
+    height: 320px;
+    justify-content: center;
+    
+}
+
+.Main>.News-foto>.News-foto-container>.card3{
+    width: 340px;
+    height: 320px;
+    justify-content: center;
+    
+}
+
+.Main>.News-foto>.News-foto-container>.card4{
+    width: 340px;
+    height: 320px;
+    justify-content: center;
+    
+}
+
+.cardPorto{
+    width: 300px;
+    height: 300px;
+    background-image: url('../src/images/porto.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.cardMadeira{
+    width: 300px;
+    height: 300px;
+    background-image: url('../src/images/madeira.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.cardLisboa{
+    width: 300px;
+    height: 300px;
+    background-image: url('../src/images/lisboa.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.cardAlentejo{
+    width: 300px;
+    height: 300px;
+    background-image: url('../src/images/alentejo.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+h4{
+    margin-top:10px;
+    color: var(--colorBlue);
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.about-main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.about-main>.about-image{
+    width: 40vw;
+    height: 50vh;
+    background-image: url(../src/images/tram-about.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-main>.about-text{
+    width: 40vw;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-main>.about-text>h3{
+    font-size: 30px;
+    color: var(--colorBlue);
+    margin-bottom: 40px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.about-info{
+    margin-top: 40px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.about-info-text{
+    text-align: center;
+    width: 721px;
+    height: 171px;
+    background-color: var(--colorLight);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-info-text>p{
+    font-size: 20px;
+}
+
+.about-info-text>h3{
+    color: var(--colorBlue);
+    font-size: 30x;
+    margin-bottom: 10px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.portugal{
+    height: 40vh;
+    background-image: url(../src/images/portugal-lisboa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.portugal-main{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.portugal-main>h3{
+    color: var(--colorBlue);
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.portugal>.portugal-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.cardBox{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorLight);
+    width: 300px;
+
+}
+
+.cardBox>img{
+    width: 300px;
+}
+
+.cards>p{
+    text-align: center;
+}
+
+.portugal-text>h4{
+    padding-top:24px;
+    padding-bottom:30px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.cardBox>h3{
+    color: var(--colorBlue); 
+    padding-bottom:10px;
+    padding-top: 10px;
+}
+
+.cardBox>p{
+    color: var(--colorLightBlue);
+    padding-bottom: 10px;
+}
+
+.hero{
+    height: 40vh;
+    background-image: url(../src/images/loule.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.region-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.region-main>h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--colorBlue);
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.region-main>p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.region-main-islands{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.region-main-islands>p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.region-main>.SaoMiguel>button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--colorLightBlue);
+    color: var(--colorLight);
+    border: none;
+    font-size: 22px;
+    align-self: center;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.SaoMiguel>h4{
+    padding-top: 40px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.region-main>.SaoMiguel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.region-main>.SaoMiguel>p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.hero-news{
+    height: 40vh;
+    background-image: url(../src/images/news-hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-left: -50px;
+    margin-right: -50px;
+    background-position: center center;
+}
+
+.news>h3{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--colorBlue);
+    font-size: 40px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.news1>.news-right{
+    width: 40vw;
+    height: auto;
+    background-image: url('../src/images/marina_vilamoura.png');
+    background-size: cover;;
+}
+
+.news1-left{
+    width: 50%;
+}
+
+.news1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news1-left>h4{
+    font-size: 24px;
+    text-align: left;
+    color: var(--colorLightBlue);
+    font-family: 'Kulim Park', sans-serif;
+    
+}
+
+.news2-right{
+
+    margin-top: 60px;
+    width: 40vw;
+    height: 400px;
+    background-image: url('../src/images/travel-news.png');
+    background-size: cover;;
+}
+
+.news2-left{
+    width: 50%;
+}
+
+.news2{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news2-left>h4{
+    padding-bottom: 60px;
+    font-size: 24px;
+    text-align: left;
+    color: var(--colorLightBlue);
+    font-family: 'Kulim Park', sans-serif;
+    
+}
+
+
+.news1-left>h5{
+    padding-top: 40px;
+    font-size: 22px;
+    color: var(--colorLightBlue);
+    text-align: left;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+/*Contactos*/
+
+.Contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.Contacts>.contact-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.Contacts>h2{
+    text-align:center;
+    font-size: 40px;
+    color: var(--colorBlue);
+    margin-top: 20px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.contacts-list{
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.contacts-list>ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    
+}
+
+.contacts-list>ul>li{
+    text-align: start;
+    justify-content:left;
+
+}
+
+.contacts-list>ul>li>a{
+    text-decoration: none;
+    color: var(--colorBlack);
+    padding: 20px;
+    font-size: 24px;
+}
+
+.contact-box>.map{
+    margin-top: 40px;
+    width: 500px;
+    height: 400px;
+    background-image: url(../src/images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.contact-box>.map>a{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.contact-box>.map>a:hover{
+    color: var(--colorGreen);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+

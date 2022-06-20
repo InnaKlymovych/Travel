@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Montagu+Slab:opsz,wght@16..144,200&family=Nunito:ital,wght@0,200;1,600&display=swap');
+
+
+:root{
+   --colorMilk:#EFF3C6;
+   --colorBlue:#0E64AF;
+   --colorLightBlue:#0E98A5;
+   --colorGreen:#16AE95;
+   --colorBlack:#1C1919;
+   --colorLight:#E2F0F5;
+
+}
+
+*{
+   font-family: 'Lato' , sans-serif;
+}
+header{
+   
+   background-color: var(--colorLight);
+   opacity: .7;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.navBarImg{
+   width: 100px;
+   height: 100px;
+   border: #0E64AF 2px solid;
+   border-radius: 5px;
+}
+.pt > img{
+   width: 40px;
+   height: 30px;
+}
+
+header>.nav-btn>ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   list-style: none;
+   
+}
+
+header>.nav-btn>ul>li{
+   
+   width: 100px;
+   height: 36px;
+   background-color: var(--colorMilk);
+   margin-left: 20px;
+   text-align: center;
+   align-self: center;
+   
+   
+
+}
+
+header>.nav-btn>ul>li:hover{
+   
+   background-color: var(--colorBlue);
+   color: var(--colorLight);
+}
+
+header>.nav-btn>ul>li>a{
+   text-decoration: none;
+   cursor:pointer;
+   color: var(--colorLightBlue);
+   font-size: 22px;
+   text-align: center;
+   
+}
+header>.nav-btn>ul>li>a:hover{
+
+   color: var(--colorLight);
+}
+
