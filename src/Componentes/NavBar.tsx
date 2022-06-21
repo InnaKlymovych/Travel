@@ -13,12 +13,51 @@ function NavBar () {
       </div>
       <div className='nav-btn'> 
          <ul>
-            <li><NavLink to="/" className={({ isActive }) =>isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'} >Home</NavLink></li>
-            <li><NavLink to="/About" className={({ isActive }) =>isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'}>About</NavLink></li> 
-            <li><NavLink to="/Portugal" className={({ isActive }) =>isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'}>Portugal</NavLink></li> 
-            <li><NavLink to="/Regions" className={({ isActive }) =>isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'}>Regions</NavLink></li> 
-            <li><NavLink to="/News" className={({ isActive }) =>isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'}>News</NavLink></li> 
-            <li><NavLink to="/Contacts" className={({ isActive }) =>isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'}>Contacts</NavLink></li> 
+            <li>
+            <NavLink 
+            to="/" 
+            className='nav-link'
+            style={({isActive}) => (isActive ? {
+            textDecoration: 'none',
+            color: 'red'
+            }
+            :{}
+            )} >Home</NavLink></li>
+            <li><NavLink to="/About" className='nav-link'
+            style={({isActive}) => (isActive ? {
+            textDecoration: 'none',
+            color: 'red'
+            }
+            :{}
+            )} >About</NavLink></li> 
+            <li><NavLink to="/Portugal" className='nav-link'
+            style={({isActive}) => (isActive ? {
+            textDecoration: 'none',
+            color: 'red'
+            }
+            :{}
+            )} >Portugal</NavLink></li> 
+            <li><NavLink to="/Regions" className='nav-link'
+            style={({isActive}) => (isActive ? {
+            textDecoration: 'none',
+            color: 'red'
+            }
+            :{}
+            )} >Regions</NavLink></li> 
+            <li><NavLink to="/News" className='nav-link'
+            style={({isActive}) => (isActive ? {
+            textDecoration: 'none',
+            color: 'red'
+            }
+            :{}
+            )} >News</NavLink></li> 
+            <li><NavLink to="/Contacts" className='nav-link'
+            style={({isActive}) => (isActive ? {
+            textDecoration: 'none',
+            color: 'red'
+            }
+            :{}
+            )} >Contacts</NavLink></li> 
          </ul>  
       </div>
       <div className='pt'>
