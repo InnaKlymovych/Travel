@@ -63,6 +63,7 @@ header>.nav-btn>ul>li:hover{
    color: var(--colorLight);
    transition: 1s;
    cursor: pointer;
+   
 }
 
 header>.nav-btn>ul>li>a{
