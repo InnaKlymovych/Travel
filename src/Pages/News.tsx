@@ -6,8 +6,7 @@ function News(){
             <div className="hero-news"></div>
             <h3>News about tourism, travel and offers.</h3>
             <div className="news1">
-                <div className="news1-left">
-                    
+                <div className="news1-left">                    
                     <h5>Portimao</h5>
                     <p>The point of using Lorem Ipsum is that it has a more-or-less  
                     normal distribution of letters, as opposed to using 'Content 

@@ -87,8 +87,10 @@ footer>.contant>.nav>ul>li>a{
 }
 
 footer>.contant>.nav>ul>li>a:hover{
-    color:var(--colorGreen);
+    transform: scale(2);
     cursor: pointer;
+    transition: .8s;
+    color: var(--colorBlue);
 }
 
 .line2{
