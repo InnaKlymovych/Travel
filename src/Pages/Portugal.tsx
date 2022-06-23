@@ -23,8 +23,7 @@ function Portugal(){
                 <img src={Acores} alt="Acores" />
                 <h3>Mosteiros</h3>
                 <p>Sao Miguel - Acores</p>
-                <p>Portugal</p>
-                
+                <p>Portugal</p>    
             </div>
             <div className="cardBox card2">
                 <img src={Bacalhoa} alt="Bacalhoa"/>

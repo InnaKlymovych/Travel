@@ -3,7 +3,7 @@ import './NavBar.css';
 import Logo from '../images/Logo.png';
 import PT from '../images/flag.png';
 import { NavLink } from "react-router-dom";
-
+import { ImMenu } from "react-icons/im"
 
 function NavBar () {
    return <>
@@ -60,8 +60,8 @@ function NavBar () {
             )} >Contacts</NavLink></li> 
          </ul>  
       </div>
-      <div className='pt'>
-         <img src= {PT} alt="pt" />
+      <div className='burger'>
+         <ImMenu />
       </div>
    </header>
    </>;

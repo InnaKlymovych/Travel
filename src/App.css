@@ -99,6 +99,7 @@ h1{
     height: 50vh;
     background-image: url('../src/images/news-right.jpeg');
     background-size: cover;
+    background-position: center center;
 }
 
 .Main>.News>.News-left{
@@ -149,7 +150,7 @@ h1{
 }
 
 .Main>.News-foto>.News-foto-container>.card1{
-    width: 340px;
+    
     height: 320px;
     justify-content: center;
     cursor: pointer;
@@ -163,7 +164,7 @@ h1{
 }
 
 .Main>.News-foto>.News-foto-container>.card2{
-    width: 340px;
+    
     height: 320px;
     justify-content: center;
     cursor: pointer;
@@ -177,7 +178,6 @@ h1{
 }
 
 .Main>.News-foto>.News-foto-container>.card3{
-    width: 340px;
     height: 320px;
     justify-content: center;
     cursor: pointer;
@@ -191,7 +191,6 @@ h1{
 }
 
 .Main>.News-foto>.News-foto-container>.card4{
-    width: 340px;
     height: 320px;
     justify-content: center;
     cursor: pointer;
@@ -238,7 +237,6 @@ h1{
 
 h4{
     margin-top:10px;
-    margin-left: -15px;
     color: var(--colorLightBlue);
     font-size: 24px;
     text-align: center;
@@ -486,10 +484,11 @@ h4{
 }
 
 .news1>.news-right{
-    width: 40vw;
+    width: 40%;
     height: auto;
     background-image: url('../src/images/marina_vilamoura.png');
-    background-size: cover;;
+    background-size: cover;
+    background-position: center center;
 }
 
 .news1-left{
@@ -513,10 +512,11 @@ h4{
 .news2-right{
 
     margin-top: 60px;
-    width: 40vw;
-    height: 400px;
+    width: 40%;
+    height: auto;
     background-image: url('../src/images/travel-news.png');
-    background-size: cover;;
+    background-size: cover;
+    background-position: center center;
 }
 
 .news2-left{
@@ -622,6 +622,7 @@ h4{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    background-position: center center;
 }
 
 .contact-box>.map>a{
@@ -671,6 +672,7 @@ h4{
 
     .Main>.News>.News-left>h3{
         text-align: center;
+        padding-left: 0;
     }
 
     .Main>.News>.News-left>p{
@@ -759,6 +761,85 @@ h4{
         justify-content: center;
         align-items: center;
     }
+
+    /*Regions*/
+
+    .hero{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*News*/
+
+    .hero-news{
+        margin: 0;
+        padding: 0;
+    }
+
+    .news1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news1-left>h5 {
+        text-align: center;
+    }
+
+    .news1-left>p{
+        text-align: center;
+    }
+
+    .news1>.news-right{
+        width: 100%;
+    }
+
+    .news2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news2-left>h4{
+        text-align: center;
+    }
+
+    .news2-left>p{
+        text-align: center;
+    }
+
+    /*Contacts*/
+
+    .Contacts{
+        height: auto;
+    }
+
+    .Contacts>.contact-box {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+
+    .contacts-list{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-box>.map{
+        width: 100%;
+        
+    }
+
+    .contacts-list>ul>li>a{
+        padding: 0;
+    }
+    
+
+
+    
         
 }
 
