@@ -103,7 +103,7 @@ footer>.contant>.nav>ul>li>a:hover{
 }
 
 .line2>p{
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 16px;
     text-align: center;
     color: var(--colorBlue);
@@ -111,6 +111,33 @@ footer>.contant>.nav>ul>li>a:hover{
 
 
 @media screen and (max-width: 600px){
+
+footer{
+    height: 300px;
+}
+
+    footer>.contant>p{
+        
+        font-size:18px;
+
+    }
+
+    footer>.contant{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0 0 10px 0;
+    }
+
+    footer>.contant>.nav{
+        display: none;
+    } 
+
+    footer>.contant>.LogoImg{
+        padding-bottom: 10px;
+        display: block;
+    }
 
     
 }
