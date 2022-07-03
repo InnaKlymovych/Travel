@@ -139,23 +139,22 @@ header>.nav-btn>ul>li>a:hover{
 
    }
 
+   .closeBtn{
+      background-color: red;
+      height: 25px;
+      width: 25px;
+      z-index: 1000;
+   }
    
-
-   
-}
-
-.closeBtn{
-   background-color: red;
+   .burger{
+   background-color: green;
    height: 25px;
    width: 25px;
    z-index: 1000;
+   
+   
+   }
+
+   
 }
 
-.burger{
-background-color: green;
-height: 25px;
-width: 25px;
-z-index: 1000;
-
-
-}

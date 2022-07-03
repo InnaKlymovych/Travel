@@ -24,7 +24,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows:14vh auto 179px;
+    grid-template-rows:15vh auto 179px;
     grid-template-columns: 50px auto 50px;
     grid-template-areas: 
         "header header header"
@@ -317,7 +317,7 @@ h4{
 
 .portugal{
     height: 50vh;
-    background-image: url(../src/images/portugal-lisboa.jpg);
+    background-image: url(../src/images/portugal-lisboa.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -558,7 +558,7 @@ h4{
 /*Contacts*/
 
 .Contacts{
-    margin-top: 100px;
+    margin-top: 120px;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -571,14 +571,16 @@ h4{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom:100px;
     
 }
 
 .Contacts>h2{
+    padding-top: 100px;
     text-align:center;
     font-size: 40px;
     color: var(--colorBlue);
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     font-family: 'Kulim Park', sans-serif;
 }
 
