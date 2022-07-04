@@ -51,6 +51,7 @@ header > .nav-btn > ul > li:hover {
   color: var(--colorLight);
   transition: 1s;
   cursor: pointer;
+  background-color: transparent;
 }
 
 header > .nav-btn > ul > li > a {
@@ -62,10 +63,11 @@ header > .nav-btn > ul > li > a {
   align-self: center;
 }
 header > .nav-btn > ul > li > a:hover {
-  color: var(--colorLight);
+  color: var(--colorBlue);
+  font-weight: bold;
 }
 
-.burger > svg {
+.burger > span {
   font-size: 1.2em;
   display: none;
   cursor: pointer;
@@ -76,6 +78,7 @@ header > .nav-btn > ul > li > a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
   #nav-desktop {
     display: none;
   }
@@ -100,6 +103,7 @@ header > .nav-btn > ul > li > a:hover {
   }
 
   header > .nav-btn > ul {
+    padding-top:100px;
     position: fixed;
     top: 0;
     right: 0;
@@ -132,17 +136,50 @@ header > .nav-btn > ul > li > a:hover {
     color: var(--colorLight);
   }
 
-  .closeBtn {
-    background-color: red;
-    height: 25px;
-    width: 25px;
-    z-index: 1000;
+  header > .nav-btn > ul > li > a:hover{
+    font-weight: bold;
+    color: #eff3c6;
   }
 
-  .burger {
-    background-color: green;
-    height: 25px;
-    width: 25px;
+  .closeBtn {
+    color: var(--colorLight);
+    height: 30px;
+    width: 30px;
     z-index: 1000;
+    cursor: pointer;
   }
+
+  .closeBtn:hover{
+    color: red;
+  }
+
+  .closeBtn>svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  
+
+  .burger {
+    display: block;
+    height: 30px;
+    width: 30px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .burger >span{
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .burger >span>svg{
+    width: 30px;
+    height: 30px;
+    color: var(--colorBlue);
+  }
+
+  
+
 }
