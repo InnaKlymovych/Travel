@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import Logo from "../images/Logo.png";
 import { NavLink } from "react-router-dom";
-import { ImMenu } from "react-icons/im";
-
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoIosMenu } from "react-icons/io";
 function NavBar() {
   const [isOpenMobile, setisOpenMobile] = useState(true);
 
@@ -133,7 +133,9 @@ function NavBar() {
               onClick={() => {
                 setisOpenMobile(false);
               }}
-            ></div>
+            >
+              < IoIosCloseCircleOutline />
+            </div>
             <ul>
               <li>
                 <NavLink
@@ -258,7 +260,9 @@ function NavBar() {
               setisOpenMobile(true);
             }}
           >
-            <ImMenu />
+            <span>
+              <IoIosMenu />
+            </span>
           </div>
         )}
       </header>
